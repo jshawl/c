@@ -5,6 +5,11 @@ all:
 	./app two args
 	./app three cool args
 
+fizzbuzz:
+	rm -f fizzbuzz
+	cc -g fizzbuzz.c -o fizzbuzz
+	./fizzbuzz
+
 clean:
 	rm -f app
 	rm -rf app.dSYM
